@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 days of code - project Meus aniversários</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <script src="js/script.js"></script>
+    
+</head>
+
+<body>
+    <div id="cabecalho">
+        <h1>Meus aniversários</h1>
+    </div>
+    <div id="corpo">
+        <div id="formulario">
+            <div class="campo">
+                <label>Nome da Pessoa: (Campo obrigatório)</label>
+                <input type="text" id="campo_nome"
+                    placeholder="Digite o nome da pessoa aqui, por exemplo: João ou Maria"  required>
+                <span id="msg_validacao " class="oculto">O nome precisa ter pelo menos três letras e máximo cento e
+                    vinte, não é possivel informar números</span>
+            </div>
+            <div class="campo">
+                <label>Data de Nascimento:  (Campo obrigatório)</label>
+                <input type="date" id="campo_data_nascimento"
+                    placeholder="Digite a data de nascimento da pessoa aqui - Ex: 28/01/2000 ()" required>
+                <span id="msg_validacao " class="oculto">A data deve esta no formato de DD/MM/AAAA</span>
+            </div>
+
+            <button id="btn-salvar" onclick="validar()">Salvar</button>
+        </div>
+        
+        <div id="area_dados">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Dados Cadastrados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Data de Nascimento</td>
+                        <td>Ações</td>
+                    </tr>
+                    <tr>
+                        <td>Matheus Castraglioni</td>
+                        <td>11/05/1985</td>
+                        <td>
+                            <a class="btn-editar"> Editar</a>
+                            <a class="btn-deletar"> Deletar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Maria Aparecida</td>
+                        <td>12/02/1984</td>
+                        <td>
+                            <a class="btn-editar"> Editar</a>
+                            <a class="btn-deletar"> Deletar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Matheus Castraglioni</td>
+                        <td>11/05/1985</td>
+                        <td>
+                            <a class="btn-editar"> Editar</a>
+                            <a class="btn-deletar"> Deletar</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
