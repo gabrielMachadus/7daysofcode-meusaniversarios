@@ -1,3 +1,6 @@
+let corpo_tabela = document.getElementById("area_dados");
+console.log(corpo_tabela);
+
 function validar(){
     let dados_campo_nome = document.getElementById('campo_nome').value;
     let dados_campo_data_nascimento = document.getElementById('campo_data_nascimento').value;
