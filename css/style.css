@@ -36,6 +36,16 @@ input, button{
     color: azure;
     padding: 10px;
 }
+
+.btn-editar,.btn-deletar{
+    margin: 10px;
+    text-decoration: underline;
+    padding: 5px;
+    color: gray;
+    background-color: black;
+    border-radius: 10px;
+}
+
 table{
     width: 100%;
 }
